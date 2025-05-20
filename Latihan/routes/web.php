@@ -7,18 +7,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function(){
+Route::get('/home', function () {
     return view('beranda', [
-        'name' => 'Monalisa',
-        'email'=>'monalisaeff@gmail.com',
-        'alamat'=> 'Kenten'
+        'name' => 'Cindy',
+        'email' => 'cindy@gmail.com',
+        'alamat' => 'sako'
     ]);
 });
 
-Route::get('/berita/{id}/{judul?}', function($id,$judul=null){
-    return view('berita', ['id' => $id,
-'judul' => $judul]);
+Route::get('/berita/{id}/{judul?}', function ($id, $judul = null) {
+    return view('berita', [
+        'id' => $id,
+        'judul' => $judul
+    ]);
 });
 
 //membuat rute ke halaman prodi index melalui controller prodicontroller
-Route::get('/prodi/index',[prodiController::class,'index']);
+
+Route::resource('prodi', ProdiController::class);
+Route::get('/prodi/index', [ProdiController::class,'index']);

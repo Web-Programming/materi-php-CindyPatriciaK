@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/materi-php-MoonA2912.iml" filepath="$PROJECT_DIR$/.idea/materi-php-MoonA2912.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/materi-php-CindyPatriciaK.iml" filepath="$PROJECT_DIR$/.idea/materi-php-CindyPatriciaK.iml" />
+>>>>>>> 5423c1fe585d0bdbdc06911e13b5173b823f8011
     </modules>
   </component>
 </project>
